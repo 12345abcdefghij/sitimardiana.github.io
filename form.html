@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viwport" content="width=device-width", initial-scale="1.0">
+    <title>Form Registrasi</title>
+</head>
+
+<body>
+
+    <h2>Form Registrasi</h2>
+
+    <form action="#" method="post" name="form input"enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Biodata</legend>
+            <table>
+                <tr>
+                   <td><label for="name">Nama:</label></td>
+                   <td><input type="text" name="txtnama" id="nama"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="nim">Nim:</label></td>
+                    <td><input type="text" name="txtnim" id="nim"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="tanggal_lahir">Tanggal Lahir:</label></td>
+                    <td><input type="date" name="dttanggal_lahir" id="tanggal_lahir"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="alamat">Alamat : </label>
+                    <td><textarea name="txtalamat" cols="20" rows="3"></textarea> </td>
+                </tr>
+
+                <tr>
+                    <td><label for="jk">Jenis Kelamin :</label></td>
+                    <td><input type="radio" name="rdjk" id="rdp" value="p"><label for="rdp">Pria</label></td>
+                    <td><input type="radio" name="rdjk" id="rdw" value="w"><label for="rdw">Wanita</label></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>User Account</legend>
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" name="txtusername" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="txtemail" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="text" name="txtpassword" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="user_password">User Password:</label></td>
+                    <td><input type="text" name="txtuser_password" id="user_password"></td>
+                </tr>
+            </table>
+        </fieldset> 
+
+        <fieldset>
+            <legend>Resolusi Tahun Ini</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="resolusi" id="html" value="HTML">
+                        <label for="html">Menguasai HTML</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="resolusi" id="css" value="CSS">
+                        <label for="css">Paham CSS</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="resolusi" id="php" value="PHP">
+                        <label for="php">Mastering PHP</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>        
+        
+        <input type="submit" value="Kirim Data" name="btnsimpan">
+    </form>
+</body>
+</html>
